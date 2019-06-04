@@ -1,0 +1,4 @@
+FileOutputStream fstream = new FileOutputStream("MyInfo.dat");
+DataOutputStream outputFile = new DataOutputStream(fstream);
+outputFile.writelnt(10);
+outputFile.close();

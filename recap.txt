@@ -1,0 +1,349 @@
+public class Dog
+{
+    //Instance vars
+    private String name;
+    private int age;
+    
+    //constructor
+    public Dog(String initName)
+    {
+        name = initName;
+        age = 0;
+            }
+
+    //methods: h main kalitera na einai se diaforetiko arxeio*
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName()
+    {
+        return name;
+    }
+
+	public int getAge()
+    {
+        return age;
+    }
+
+    public int getDogYears()
+    {
+        return age*5;
+    }
+
+    public void addAYear()
+    {
+        age = age + 1;
+    }
+
+    public void setAge()
+    {
+        return age;
+    }
+
+
+as ftiaksoume 2 skilakia:
+
+public class Dog_1
+02
+	{
+03
+	//Attributes  [i.e. data]
+04
+	private String name;
+05
+	private String breed;
+06
+	private int age;
+07
+	 
+08
+	 
+09
+	public Dog_1()
+10
+	{
+11
+	name="";
+12
+	breed="";
+13
+	age=0;
+14
+	}
+15
+	 
+16
+	//fully parameterized constructor
+17
+	public Dog_1(String name, String breed, int age)
+18
+	{
+19
+	this.name=name;
+20
+	this.breed=breed;
+21
+	this.age=age;
+22
+	}
+23
+	 
+24
+	//copy constructor
+25
+	public Dog_1(Dog_1 someDog)
+26
+	{
+27
+	this.name=someDog.getName();
+28
+	this.breed=someDog.getBreed();
+29
+	this.age=someDog.getAge();
+30
+	}
+31
+	 
+32
+	 
+33
+	 
+34
+	public String getName()
+35
+	{
+36
+	return name;
+37
+	}
+38
+	 
+39
+	public String getBreed()
+40
+	{
+41
+	return breed;
+42
+	}
+43
+	public int getAge()
+44
+	{
+45
+	return age;
+46
+	}
+47
+	}
+48
+	 pos to vazo se mia lista:
+
+list<Dogs> List = new ArrayList();
+
+class person that has a dog:
+private Dog skyli;
+
+vazo getters/setters*
+
+*kanoume mia class apo persons named team with sport and players#
+
+public class Team {
+
+    //Instance variables and constants
+    private static final int MAX_PLAYERS = 11;
+    private Player[] players;
+    private String name;
+    private String mascot;
+
+
+    //Constructor
+    public Team(String name, String mascot) {
+        this.name = name;
+        this.mascot = mascot;
+        this.players = new Player[MAX_PLAYERS];
+    }
+
+
+    //Add players to the team
+    public void addPlayers(List<Player> p) {
+        //Ensures only 11 players are added to the team
+        for (int i = 0; i < MAX_PLAYERS; i++)
+            this.players[i] = p.get(i);
+    }
+
+}
+
+
+I didn't write the getter or setter methods for the instance variables, because I think you can figure those out. But from your description of the Team class, it could look something like this.
+
+public class Team {
+
+    //Instance variables and constants
+    private static final int MAX_PLAYERS = 11;
+    private Player[] players;
+    private String name;
+    private String mascot;
+
+
+    //Constructor
+    public Team(String name, String mascot) {
+        this.name = name;
+        this.mascot = mascot;
+        this.players = new Player[MAX_PLAYERS];
+    }
+
+
+    //Add players to the team
+    public void addPlayers(List<Player> p) {
+        //Ensures only 11 players are added to the team
+        for (int i = 0; i < MAX_PLAYERS; i++)
+            this.players[i] = p.get(i);
+    }
+
+}
+
+*To match the implementation of this Team class, your App should be more of something like this, to be able to pass an already build List<Player> to the addPlayers method of the Team class...
+
+public class app {
+    public static void main(String[] args) {
+        List<Player> players = new ArrayList<>();
+
+        players.add(new Player(/* Parameters for each player object */));
+        //Not writing this 11 times!
+
+        Team team = new Team("The Bulldogs", "Bull Dog");
+        team.addPlayers(players);
+    }
+}
+
+how to extract and add persons from a list*
+
+public void addPersn(Person p);{
+Playersadd(p);
+
+pos ektipono to onoma tou skiloy kathe paikti*
+
+List<Person> ListaPerson2 = t1.getPlayers();
+Systemout.println("\nPrnting from Team");
+for(Person human:t1.getPlayers(){
+if(human.getSkyli()!=null{
+System.out.println("Person "+ human.getName()+ "has dog "+ human.getSkyli().getName());
+}else{
+System.out.println("Person "+ human.getName()+ "has no dog ";
+
+products:
+apple 4, 1.50 kostizei to kathe ena milo-->1.70, A
+orange 3, 2.0, B
+milk 1, 5.0, C
+price for each product: double
+section: char(A), (B), (C)
+
+bag of products
+TOTAL PRICE OF PRODUCTS???
+
+Item Class
+
+    package items;
+
+public class Item {
+    private String name;
+    private char section;
+    private double price;    
+    private int quantity;
+
+    public Item(Apple) {
+        this.name = "Apple";
+        this.section = A;
+        this.price = 1.50;
+        this.quantity = 4;
+    }
+
+public Item(Orange) {
+        this.name = "Orange";
+        this.section = B;
+        this.price = 2.00;
+        this.quantity = 3;
+
+}
+
+public Item(Milk) {
+        this.name = "Milk";
+        this.section = C;
+        this.price = 5.00;
+        this.quantity = 1;
+
+}
+
+
+
+    public Item(String name, char section, double price, int quantity) {
+        this.name = name;
+        this.section = section;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public Item(Item item) {
+        this.name = item.name;
+        this.section = item.section;
+        this.price = item.price;
+        this.quantity = item.quantity;
+
+}
+
+ @Override
+    public String toString() {
+        return "Item [name=" + name + ", section=" + section + ", price=" + price
+                + ", quantity=" + quantity + "]";
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public char getSection() {
+        return section;
+    }
+
+    public void setSection(char section) {
+        this.section = section;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+}
+
+
+*****kanoume ti main:
+
+
+
+
+*****mia klasi product
+*****mia class orange, extends product
+******mia klasi apple, extends product
+*****mia klasi milk, extends product
+
+
+
+

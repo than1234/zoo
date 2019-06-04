@@ -1,0 +1,61 @@
+public static void main(String[] args):
+Scanner input = new Scanner( System.in );
+
+String [] pinakas = {"Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday", "Sunday"}
+
+system.out.printIn("Person1 name:");
+String name1 = Input.next();
+system.out.printIn("Person2 name:");
+String name2 = Input.next();
+
+
+system.out.printIn("Person1 favorite day:");
+String day1 = input.next();
+system.out.printIn("Person2 favorite day:");
+String day2 = input.next();
+
+System.out.print("Personl age: ");
+int age1 = input.nextInt();
+System.out.print("Person2 age: ");
+int age2 = input.nextInt();
+
+Input.close
+
+System.out.print("Name of person 1 is " +name1):
+System.out.print(", age is " + age1);
+System.out.print(" and favourite day is " + day1+"\n);
+
+
+for(String day to check:( {
+if (dayToCheck equals (day1))
+Sustem.out.println(dayToCheck +"=="+day1+"???");
+Sustem.out.println("You like casual days");
+break;
+}else{
+Sustem.out.println("You like weeend");
+
+h mporoyme na kanoyme if:
+
+if (day equals("Saterday") || day1.equals("Sundays");
+System.out.println(You like weekend");
+}else{
+Sysem.out.printn("You like casual days");
+
+h mporoyme na kanoume switch:
+switch(day1){
+case "Monday";
+case "Tuesday";
+case "Wednsday";
+case "Friday";
+System.out.println("You like casual days")
+
+break;
+default;
+case "Saturday";
+case "Sunday";
+System.out.println("You like weekend")
+
+
+KANOYME METHODO meta th main:
+
+public static void printDayPreference (String: name, String day){

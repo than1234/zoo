@@ -1,0 +1,52 @@
+#collection
+
+List<String> list = Arraynew list();     #kanoume import kai gia to list kai gia to arraylist#
+ArrayList<String> arraylist = new ArrayList();
+list.ad("Jack");
+list.ad("Mary");
+list.ad("John");
+list.ad("Peter");
+list.ad("Andy");
+
+for(String x:list){
+System.out.println(""x is "+x);   #gia na mas ektiposei#
+}
+
+}
+
+
+static void printList(List<String> list){    
+for(String x:list){
+System.out.println("x is " +x));
+
+Collections c = new (Collections();
+printList(list);    			  #gia na kaleso th lista#
+
+list.set(1, "Maria");
+System.out.println();
+printList(list);
+
+
+list.clear   *diagrafei ola ta stoiia pou iparxoun sti lista*
+printLis(list);
+
+
+list.remove3();
+list.contains();
+
+
+List<String> list2 = list   #eisai ki esi list kai tha deixeis ekei pou deixnei kai i metavliti list = shallow copy#
+list2.add("Rokas");
+printList(list);
+
+List<String> list3 = new ArrayList(list);		#deep copy#
+
+
+
+
+
+
+
+
+
+}

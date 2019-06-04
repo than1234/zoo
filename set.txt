@@ -1,0 +1,82 @@
+* how sets work:
+
+
+Set setA = new HashSet();
+
+String element = "element 1";
+
+setA.add(element);
+
+System.out.println( setA.contains(element) );
+
+
+*Set implementations in the Java Collections API:
+
+    java.util.EnumSet
+    java.util.HashSet
+    java.util.LinkedHashSet
+    java.util.TreeSet
+
+*examples of how to create a Set instance:
+
+Set setA = new EnumSet();
+Set setB = new HashSet();
+Set setC = new LinkedHashSet();
+Set setD = new TreeSet();
+
+*To add elements to a Set you call its add() method. This method is inherited from the Collection interface. 
+
+
+*printing a list using "for"
+
+for(int i=0;i<list.size();i++){
+    System.out.println(list.get(i));
+} 
+
+*tiponei mikroterous arithmous apo to 10
+
+for(int num:numbers){
+if(num>10){
+System.out.print(num);
+
+
+*na diagrapsei arithmous mikroterous apo to 10:
+for(int num:numbers){
+if(num>10){
+numbers.remove(num);
+System.out.print(num);--->afto den paizei
+
+
+*prepei na ginei me iterator:
+Iterator<Integer> it = numbers.iterator()
+it.-->mas deixnei tis epiloges pou dinontai
+while.it.hashNext(){
+int i = it.next();
+System.out.println(i);
+if(i<10);
+it.remove();
+}
+}
+System.out.println("numbers more than ten are "+numbers);
+
+
+
+
+Here are a few examples:
+
+Set setA = new HashSet();
+
+setA.add("element 1");
+setA.add("element 2");
+setA.add("element 3");
+
+how to count the number of instances that a word has in a paragraph in java:
+
+    public int wordCount(String str) {
+    StringTokenizer s = new StringTokenizer(str.toLowerCase(), " ,.", false);
+    Set<String> uniqueWords = new HashSet<String>();
+    while (s.hasMoreTokens()) {
+        uniqueWords.add(s.nextToken());
+    }
+    return uniqueWords.size();
+}

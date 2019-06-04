@@ -1,0 +1,101 @@
+#h class student edo:
+
+public class student Implement Comparable*(kano deji klik kai implement oles tis comparable methodous)*{
+private String name;
+private int grade;
+private int age;
+
+#h main edo:
+
+student s1 = new student("Peter", 18, 20);
+klp students
+
+pame na sygrinoymme mathites:
+boolean isEqual = (s1 == s2)
+System.out.println("s1==s2:" +isEqual);
+klp..
+
+#pos vazo hashset:
+    import java.util.*;  
+    class HashSet1{  
+     public static void main(String args[]){  
+      //Creating HashSet and adding elements  
+        HashSet<String> set=new HashSet();  
+               set.add("One");    
+               set.add("Two");    
+               set.add("Three");   
+               set.add("Four");  
+               set.add("Five");  
+               Iterator<String> i=set.iterator();  
+               while(i.hasNext())  
+               {  
+               System.out.println(i.next());  
+               }  
+     }  
+    }  
+
+for(Student s: treeset:\{
+System.out.println
+
+**kano 2 fores override
+public int compareTo(Object o){
+System.out.println("CompareTo runing");
+int.result = this.age - ((Student:)\o.\age;
+if(result ==result\){
+result = -1;
+}
+return result;
+
+*xrisi iterator:
+
+import java.util.Iterator;
+
+Iterator<Students> itr=treeSet.iterator();
+
+    while(itr.hasNext())
+    {
+        Student student = itr.next();
+
+if(student.getAge>30()>=30{
+iterator.remove();
+
+        System.out.print("age:"+student.getAge());
+        System.out.print("empid:"+student.getgrade());
+        System.out.println("name:"+student.getname());
+    }
+
+pos na kano compare prota se grade, meta se age, kai telow to onoma:
+
+public int compareTo(Object o){
+System.out.println("CompareTo grade");
+System.out.println("CompareTo age");
+System.out.println("CompareTo name");
+int.result = this.grade - ((Student:)\o.\grade;
+if(result ==result\){
+result = -1;
+int.result = this.age - ((Student:)\o.\age;
+if(result ==result\){
+result = -1;
+int.result = this.name - ((Student:)\o.\name;
+if(result ==result\){
+result = -1;
+
+}
+
+
+public int compare(Student s1, Student s2){
+int n = s1.age - s2.age;
+
+return0;
+
+=============
+public int compareTo(Object o){
+int.result = this.grade - ((Student:)\o.\grade;
+if(result ==result\){
+result = 0;
+result = this.grade - ((Student:\o).grade;
+}
+if(result==0)}
+result = 0
+
+result = this.

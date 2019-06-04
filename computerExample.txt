@@ -1,0 +1,23 @@
+System.out.printn("priceOfSony is "+priceOfSony);
+System.out.printn("priceOfLenovo is "+priceOfLenovo);
+System.out.printn("priceOfDell is "+priceOfDell);
+
+double prieOfLaptop = 0.0;
+double prieOfDesctop = 0.0;
+double prieOfTable = 0.0;
+
+for (Computer c : computers) {
+if(c instanceof Laptop){
+priceOfLaptop +=c.getPrice();
+}else if(c instanceof Desktop) {
+}else if(c instanceof Tablet) {
+priceOfTablet += c.getPrice();
+
+System.out.println(Laptops cost: "+priceOfLaptop);
+System.out.println(Desktops cost: "+priceOfDesktop);
+System.out.println(Tablets cost: "+priceOfTablet);
+
+
+
+
+if (variable InstanceOf Class){
